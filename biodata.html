@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biodata</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #83c5be, #edf6f9);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(131, 197, 190, 0.9);
+            padding: 10px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            margin: 0 15px;
+        }
+        .navbar a:hover {
+            color: #333;
+        }
+        .header {
+            background: rgba(131, 197, 190, 0.9);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.2em;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px #333;
+        }
+        .biodata-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 50vh;
+        }
+        .text-content {
+            padding: 15px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .text-content h2 {
+            color: #009688;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        .text-content p {
+            font-size: 0.8em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .text-content ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        .text-content ul li {
+            font-size: 0.8em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 5px;
+        }
+        .image-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48%;
+            height: 100%;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            background-color: #84c6be;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.5em;
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+        .footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .biodata-container {
+                flex-direction: column;
+                height: auto;
+            }
+            .text-content, .image-grid {
+                width: 100%;
+            }
+            .image-grid {
+                height: auto;
+            }
+            .header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+         <a href="index.html">HomePage</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">Family</a>
+    </div>
+
+    <div class="header">
+        <h1>Biodata</h1>
+        <h3>Get To Know Me</h3>
+    </div>
+
+    <div class="biodata-container">
+        <div class="text-content">
+            <h2 id="introduction">INTRODUCTION</h2>
+            <p>
+                Hi! My name is Ninie, the creator of this site. I am also a final-year student at UiTM Kedah, currently pursuing a diploma in Information Management. This webpage is part of an assignment for the course Introduction to Web Content Management and Design <strong>(IMD318)</strong>. I hope you enjoy exploring this site.
+            </p>
+
+            <h2 id="personal-details">PERSONAL DETAILS</h2>
+            <ul>
+                <li><b>Full Name:</b> Nur Ainie Syuhadah Binti Zainudin</li>
+                <li><b>Birth Date:</b> 19 June 2004</li>
+                <li><b>Address:</b> 14, Lorong Bangau 1/1 Taman Tunku Putra 09000 Kulim Kedah</li>
+                <li><b>Email:</b> ninie@gmail.com</li>
+                <li><b>Phone:</b> +60-174856847</li>
+                <li><b>Social Media:</b> <a href="https://www.instagram.com/nieejo?igsh=NWN5bmFibWdkeW8=" target="_blank" title="Instagram">Instagram</a></li>
+            </ul>
+        </div>
+
+        <div class="image-grid">
+            <img src="me.jpg" alt="me">
+        </div>
+    </div>
+
+    <div class="footer" id="contact">
+        <p>© 2024 Ninie</p>
+        <p>Contact Me:</p>
+        <p>Email: ninie@gmail.com</p>
+        <p>Phone: +60174856847</p>
+        <p>Instagram: <a href="https://www.instagram.com/nieejo?igsh=NWN5bmFibWdkeW8=" target="_blank" title="Instagram">@nieejo</a></p>
+    </div>
+</body>
+</html>

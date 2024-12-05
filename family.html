@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #83c5be, #edf6f9);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Sticky Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(131, 197, 190, 0.9);
+            padding: 10px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            margin: 0 15px;
+        }
+
+        .navbar a:hover {
+            color: #333;
+        }
+
+        /* Header Styling */
+        .header {
+            background: rgba(131, 197, 190, 0.9);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.2em;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px #333;
+        }
+
+        /* Content Container */
+        .biodata-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 80vh;
+        }
+        .image-grid {
+            width: 100%;
+            height: 60%;
+            margin-bottom: 20px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Text Content */
+        .text-content {
+            padding: 15px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .text-content h2 {
+            color: #009688;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .text-content p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #84c6be;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.5em;
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+        .footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .biodata-container {
+                flex-direction: column;
+                height: auto;
+            }
+            .text-content, .image-grid {
+                width: 100%;
+                height: auto;
+            }
+            .image-grid {
+                height: 60%;
+            }
+            .header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+  <div class="navbar">
+        <a href="index.html">HomePage</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">Family</a>
+
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Family</h1>
+        <h3>Meet The People Who Matter The Most</h3>
+    </div>
+
+    <!-- Content -->
+    <div class="biodata-container">
+        <div class="image-grid">
+            <img src="family.jpg" alt="fam">
+        </div>
+
+        <div class="text-content">
+            <h2>MEET MY BELOVED FAMILY</h2>
+            <p>
+                <b>Top Row (from left to right):</b> My first sister, NUR HIEDAYAH BINTI ZAINUDIN, is the big sister we all look up to. First sister’s husband, MOHD SAFWAN BIN ABU OTHMAN, is a perfect addition to our family. Dad, ZAINUDIN BIN AWANG, is the backbone of our family. Third sister’s husband, ARIF ZAINAL BIN ZAINON, is quiet but dependable. Third sister, NUR SHAHIERA BINTI ZAINUDIN, is the life of the party. Mom, NORLIDA BINTI ZAINAL, is the soul of our family. Me (the fourth sibling), NUR AINIE SYUHADAH BINTI ZAINUDIN, am the family dreamer. Second sister, NUR AZREEN FATIHAH BINTI ZAINUDIN, is the creative and thoughtful one.
+            </p>
+            <p>
+                <b>Bottom:</b> Youngest brother, MUHAMMAD QAYYUM AZIEM BIN ZAINUDIN, is our little ball of energy.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Ninie</p>
+        <p>Contact Me:</p>
+        <p>Email: ninie@gmail.com</p>
+        <p>Contact Number: +60174856847</p>
+        <p>Instagram: <a href="https://www.instagram.com/nieejo?igsh=NWN5bmFibWdkeW8=" target="_blank" title="Instagram">@nieejo</a></p>
+    </div>
+</body>
+</html>

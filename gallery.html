@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to bottom, #83c5be, #edf6f9);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(131, 197, 190, 0.9);
+            padding: 10px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            margin: 0 15px;
+        }
+        .navbar a:hover {
+            color: #333;
+        }
+        .header {
+            background: rgba(131, 197, 190, 0.9);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px #333;
+        }
+        .header h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: normal;
+        }
+        .main {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+        .image-grid {
+            position: relative;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            height: 300px;
+            width: 100%;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .image-grid h3 {
+            position: absolute;
+            bottom: 40px;
+            left: 20px;
+            color: #009688;
+            font-size: 1.5em;
+            z-index: 2;
+        }
+        .image-grid p {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #f5f5f5;
+            font-size: 1em;
+            z-index: 2;
+        }
+        .footer {
+            background-color: #84c6be;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.5em;
+        }
+        .footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .main {
+                grid-template-columns: 1fr 1fr;
+            }
+            .image-grid {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">HomePage</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">Family</a>
+    </div>
+
+    <div class="header">
+        <h1>Gallery</h1>
+        <h3>Explore the moments</h3>
+    </div>
+
+    <div class="main">
+        <div class="image-grid">
+            <img src="cats.jpg" alt="pets">
+            <h3>PETS</h3>
+            <p>Furry Friends</p>
+        </div>
+        <div class="image-grid">
+            <img src="food.jpg" alt="food">
+            <h3>FOOD</h3>
+            <p>Nasi Lemak, A Classic Dish.</p>
+        </div>
+        <div class="image-grid">
+            <img src="sea.jpg" alt="sea">
+            <h3>OCEAN</h3>
+            <p>Wave Of Wonders</p>
+        </div>
+        <div class="image-grid">
+            <img src="merch.jpg" alt="merch">
+            <h3>MERCH</h3>
+            <p>JPNR's Collection.</p>
+        </div>
+        <div class="image-grid">
+            <img src="pmds.jpg" alt="pmds">
+            <h3>PMDS</h3>
+            <p>Pemimpin Pemantapan Destini Siswa.</p>
+        </div>
+        <div class="image-grid">
+            <img src="spm.jpg" alt="spm">
+            <h3>SPM</h3>
+            <p>Sijil Pelajaran Malaysia</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Ninie</p>
+        <p>Contact Me;</p>
+        <p>Email: ninie@gmail.com</p>
+        <p>Contact Number: +60174856847</p>
+        <p>Instagram: <a href="https://www.instagram.com/nieejo?igsh=NWN5bmFibWdkeW8=" target="_blank" title="Instagram">@nieejo</a></p>
+    </div>
+</body>
+</html>
